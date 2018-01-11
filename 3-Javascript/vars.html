@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+		
+		<style type="text/css">
+			
+		
+		</style>
+	
+	</head>
+
+	<body>	
+	
+		<input type="text" id="textBox">
+		
+		<button id="but1">Change the text</button>
+		
+		<p id="p1">This is some text</p>
+	
+		<script type="text/javascript">
+		
+			document.getElementById("but1").onclick = function () {
+			
+				var textInput = "";
+				textInput = document.getElementById("textBox").value;
+				document.getElementById("p1").innerHTML = textInput;
+			}
+			
+			var myArr = new Array();
+			
+			myArr[0] = "pizza";
+			
+			myArr[1] = "milk";
+			
+			console.log(myArr);
+			
+			var len = myArr.length;
+			
+			var tweets = ["Morning ppl", "GO tigs"];
+			
+			tweets.push("Rip");
+			
+			alert(tweets[2]);
+			
+			console.log(myArr);
+			
+			tweets.splice(3, 2, "Hello");
+			
+			alert(tweets[3]);
+		
+		</script>
+	
+	</body>
+
+</html>

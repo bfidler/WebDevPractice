@@ -1,0 +1,61 @@
+<html>
+
+	<head>
+	
+		<title>Javascript</title>
+	
+	</head>
+
+	<body>	
+		
+		<p id="text">Hello World!</p>
+		
+		<button id="myButton">Change text</button>
+		
+		<p id="secondParagraph">Javascript is ...</p>
+		
+		<button id="buttonNo2">DONT CLICK</button>
+		
+		<p id="emptyParagraph"><br></p>
+		
+		<button id="createParagraph">DONT CLICK</button>
+		
+		<p id="style">Style Text</p>
+		
+		<button id="styleButton">Press</button>
+	
+		<script type="text/javascript">
+		
+			/* This is a multi line
+			comment*/
+			
+			//This is a single line comment
+		
+			//Button select
+			document.getElementById("myButton").onclick = function() {
+				
+				alert("Button clicked");
+				document.getElementById("text").innerHTML = "Hello There!";
+			}
+			
+			document.getElementById("buttonNo2").onclick = function() {
+			
+				document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + " Fun!";
+			}
+			
+			document.getElementById("createParagraph").onclick = function () {
+			
+				document.getElementById("emptyParagraph").innerHTML = "Paragraph Created.";
+			}
+			document.getElementById("styleButton").onclick = function() {
+			
+				document.getElementById("style").style.color = "red";
+				document.getElementById("style").style.fontSize = "50px";
+				document.getElementById("style").style.display = "none";
+			}
+	
+		</script>
+	
+	</body>
+
+</html>
