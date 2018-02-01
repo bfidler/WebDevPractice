@@ -1,0 +1,56 @@
+<html>
+
+	<head>
+	
+		<title>jQuery</title>
+		
+		<script type="text/javascript" src="jquery-min.js"></script>
+		
+		<style type="text/css">
+		
+			.greenCircle {
+			
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: green;
+				margin: 10px;
+			}
+			.redSquare {
+			
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin: 10px;
+			}
+			
+			#hidden {
+			
+				display: none;
+			}
+		
+		</style>
+		
+	</head>
+
+	<body>	
+	
+		<p id="text">Hi there!</p>
+		
+		<button>Fade</button>
+	
+		<script type="text/javascript">
+		
+			$("button").click(function(){
+			
+				if ($("#text").css("display") == "none")
+					$("#text").fadeIn("slow");
+				else 
+					$("#text").fadeOut("slow");
+			});
+		
+		</script>
+	
+	</body>
+
+</html>

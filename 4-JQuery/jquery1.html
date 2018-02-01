@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+	
+		<title>jQuery</title>
+		
+		<script type="text/javascript" src="jquery-min.js"></script>
+		
+		<style type="text/css">
+		
+			.greenCircle {
+			
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: green;
+				margin: 10px;
+			}
+		
+		</style>
+		
+	</head>
+
+	<body>	
+	
+		<p>Hi there!</p>
+		
+		<div class="greenCircle"></div>
+		
+		<iframe src="http://www.tigernet.com"></iframe>
+	
+		<script type="text/javascript">
+		
+			$(".greenCircle").hover(function(){
+			
+				$("iframe").attr("src", "http://www.braydenfidler.com");
+			});
+
+		
+		</script>
+	
+	</body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+	<head>
+	
+		<title>jQuery</title>
+		
+		<script type="text/javascript" src="jquery-min.js"></script>
+		
+		<style type="text/css">
+		
+			.greenCircle {
+			
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: green;
+				margin: 10px;
+			}
+			.redSquare {
+			
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin: 10px;
+			}
+		
+		</style>
+		
+	</head>
+
+	<body>	
+	
+		<p>Hi there!</p>
+		
+		<div class="greenCircle"></div>
+		
+		<div class="redSquare"></div>
+		
+		<div class="redSquare"></div>
+	
+		<script type="text/javascript">
+		
+			$("div").click(function(){
+			
+				$(this).css("display", "none");
+				alert("A " + $(this).attr("class") + " has disappeared.");
+			});
+
+		
+		</script>
+	
+	</body>
+
+</html>

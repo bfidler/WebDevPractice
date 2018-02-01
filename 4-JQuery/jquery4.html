@@ -1,0 +1,56 @@
+<html>
+
+	<head>
+	
+		<title>jQuery</title>
+		
+		<script type="text/javascript" src="jquery-min.js"></script>
+		
+		<style type="text/css">
+		
+			.greenCircle {
+			
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				background-color: green;
+				margin: 10px;
+			}
+			.redSquare {
+			
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin: 10px;
+			}
+			
+		
+		</style>
+		
+	</head>
+
+	<body>	
+	
+		<div class="greenCircle"></div>
+	
+		<script type="text/javascript">
+		
+			$(".greenCircle").click(function () {
+			
+				$(this).animate({
+					width: "400px", 
+					height: "400px",
+					marginLeft: "100px",
+					marginTop: "100px"
+				} ,2000, function () {
+				
+					$(this).css("background-color", "red");
+				});
+				
+			});
+		
+		</script>
+	
+	</body>
+
+</html>
